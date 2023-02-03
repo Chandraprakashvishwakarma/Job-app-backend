@@ -20,14 +20,14 @@ public class PostController {
 //    @Autowired
 //    private PostRepository repo;
 
-    @RequestMapping(value="/")
-    public void redirect(HttpServletResponse response) throws IOException{
-        response.sendRedirect("/swagger-ui.html");
-    }
+//    @RequestMapping(value="/")
+//    public void redirect(HttpServletResponse response) throws IOException{
+//        response.sendRedirect("/swagger-ui.html");
+//    }
 
     @RequestMapping("/home")
     public String Home(){
-        return "This is Home page.\nChecking line break";
+        return "This is Home page.\n Please use below requests: \n1. /add\n2. /getAll";
     }
 
 
